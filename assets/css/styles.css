@@ -49,7 +49,6 @@ body{
 }
 /* general */
 .container {
-  /* max-width: 88.88%; */
   padding: 0 80px;
 }
 section {
@@ -117,12 +116,13 @@ p {
   font-size: var(--fsize-16);
   line-height: var(--lh-24);
   letter-spacing: var(--ls-minus-px);
+  color: var(--color-text);
 }
 
 /* navbar section */
 .navbar {
   background-color: var(--color-neutral-600);
-  padding: 22px 0;
+  padding: 22px 32px;
 }
 .navbar img {
   width: 160px;
@@ -133,11 +133,13 @@ p {
   gap: 32px;
 }
 .navbar__btns {
-  margin-right: 32px;
   gap: 24px;
 }
 .navbar .signup {
   color: #437EF7 !important;
+}
+.navbar .login {
+  border-radius: 6px;
 }
 
 /* banner section */
@@ -157,6 +159,7 @@ p {
 .welcome {
   background-color: var(--color-dark-blue);
   color: var(--color-white);
+  padding-left: 32px;
 }
 .welcome__content {
   /* margin-right: 120px; */
@@ -182,3 +185,29 @@ form p {
   margin-top: 8px;
 }
 
+/* tools section */
+.tools {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+.tools__content {
+  width: 50%;
+  margin-right: 40px;
+}
+.img-wrapper {
+  margin-bottom: 24px;
+}
+.tools__content h3, .tools p {
+  margin-bottom: 16px;
+}
+.tools .date {
+  margin-bottom: 0;
+}
+.tools__items {
+  flex-direction: column;
+  gap: 32px;
+}
+.tools__item .img-wrapper {
+  margin: auto;
+  margin-right: 24px;
+}
