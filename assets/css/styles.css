@@ -7,6 +7,7 @@
   --color-neutral-200: #F9F9F9;
   --color-white: #FFFFFF;
   --color-blue-bg: #437EF7;
+  --color-dark-blue: #2B63D9;
 
   --fsize-h1:  52px;
   --fsize-h2: 32px;
@@ -43,7 +44,8 @@
 }
 body{
   font-family: "Inter", sans-serif;
-  width: 100%;
+  width: 1440px;
+  margin: auto;
 }
 /* general */
 .container {
@@ -68,9 +70,10 @@ ul {
 button, .navbar .login {
   padding: 12px 18px;
   color: var(--color-white);
-  border-radius: 6px;
+  border-radius: 0 6px 6px 0;
   background-color: var(--color-blue-bg);
   border: none;
+  margin-left: -4px;
 }
 button, .navbar {
   font-size: var(--fsize-15);
@@ -80,7 +83,7 @@ button, .navbar {
 }
 .d-flex {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: space-between;
   align-items: center;
 }
@@ -150,4 +153,32 @@ p {
   margin-bottom: 16px;
 }
 
+/* welcome section */
+.welcome {
+  background-color: var(--color-dark-blue);
+  color: var(--color-white);
+}
+.welcome__content {
+  /* margin-right: 120px; */
+  width: 50%;
+}
+.welcome__content p{
+  color: var(--color-blue-text);
+  margin-top: 24px;
+}
+.welcome input {
+  width: 352px;
+  height: 46px;
+  padding: 12px 16px;
+  border-radius: 6px 0 0 6px;
+  border: none;
+  color: #919BA7;
+  font-size: var(--fsize-15);
+}
+form p {
+  color: var(--color-blue-text);
+  font-size: var(--fsize-14);
+  line-height: var(--lh-20);
+  margin-top: 8px;
+}
 
