@@ -244,3 +244,26 @@ form p {
   color: var(--color-blue-bg);
   margin-top: 16px;
 }
+
+/* signup section */
+.signup-sec {
+  text-align: center;
+  background-color: var(--color-dark-blue);
+  color: var(--color-white);
+}
+.signup-container {
+  width: 600px;
+  margin: auto;
+  padding: 0;
+}
+.signup-sec p {
+  color: var(--color-white);
+  padding-bottom: 8px;
+}
+.signup__link a {
+  background-color: var(--color-white);
+  color: var(--color-blue-bg);
+  padding: 12px 18px;
+  border-radius: 6px;
+  margin-top: 32px;
+}
