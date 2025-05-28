@@ -89,7 +89,7 @@ h1 {
   font-size: var(--fsize-h1);
   line-height: var(--lh-60);
   letter-spacing: var(--ls-minus-one);
-  text-align: center;
+  color: var(--color-dark-text);
 }
 h2 {
   font-weight: var(--fw-600);
@@ -135,6 +135,19 @@ p {
 }
 .navbar .signup {
   color: #437EF7 !important;
+}
+
+/* banner section */
+.banner {
+  padding: 80px 320px 92px;
+  text-align: center;
+}
+.banner p {
+  color: var(--color-blue-bg);
+  font-weight: var(--fw-600);
+  font-size: var(--fsize-14);
+  line-height: var(--lh-20);
+  margin-bottom: 16px;
 }
 
 
