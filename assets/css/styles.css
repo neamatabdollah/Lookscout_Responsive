@@ -186,7 +186,7 @@ form p {
 }
 
 /* tools section */
-.tools {
+.tools, .posts__flex {
   padding-left: 32px;
   padding-right: 32px;
 }
@@ -210,4 +210,37 @@ form p {
 .tools__item .img-wrapper {
   margin: auto;
   margin-right: 24px;
+}
+
+/* posts section */
+.posts h2 {
+  text-align: center;
+  font-weight: var(--fw-700);
+  line-height: var(--lh-40);
+  letter-spacing: var(--ls-minus-two);
+}
+.posts hr {
+  width: 138px;
+  height: 5px;
+  background-color: #D9D9D9;
+  margin: 18px auto 41px;
+}
+.posts__flex {
+  gap: 32px;
+}
+.upper-flex {
+  padding-bottom: 48px;
+}
+.posts img {
+  margin-bottom: 16px;
+}
+.posts p {
+  font-weight: var(--fw-500);
+  font-size: var(--fsize-14);
+  line-height: var(--lh-20);
+  margin-bottom: 8px;
+}
+.posts a {
+  color: var(--color-blue-bg);
+  margin-top: 16px;
 }
