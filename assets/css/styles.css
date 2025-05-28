@@ -3,6 +3,7 @@
   --color-dark-text: #272D37;
   --color-blue-text: #B1CCFB;
   --color-neutral-800: #A5ACBA;
+  --color-neutral-600: #EAEBF0;
   --color-neutral-200: #F9F9F9;
   --color-white: #FFFFFF;
   --color-blue-bg: #437EF7;
@@ -46,7 +47,7 @@ body{
 }
 /* general */
 .container {
-  /* width: 88.88%; */
+  /* max-width: 88.88%; */
   padding: 0 80px;
 }
 section {
@@ -59,13 +60,29 @@ img {
 a {
   display: inline-block;
   text-decoration: none;
+  color: var(--color-dark-text);
 }
 ul {
   list-style: none;
 }
+button, .navbar .login {
+  padding: 12px 18px;
+  color: var(--color-white);
+  border-radius: 6px;
+  background-color: var(--color-blue-bg);
+  border: none;
+}
+button, .navbar {
+  font-size: var(--fsize-15);
+  line-height: var(--lh-22);
+  font-weight: var(--fw-600);
+  letter-spacing: var(--ls-zero);
+}
 .d-flex {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 h1 {
   font-weight: var(--fw-700);
@@ -100,3 +117,24 @@ p {
 }
 
 /* navbar section */
+.navbar {
+  background-color: var(--color-neutral-600);
+  padding: 22px 0;
+}
+.navbar img {
+  width: 160px;
+  height: 40px;
+  margin-right: 69px;
+}
+.navbar__links {
+  gap: 32px;
+}
+.navbar__btns {
+  margin-right: 32px;
+  gap: 24px;
+}
+.navbar .signup {
+  color: #437EF7 !important;
+}
+
+

@@ -12,21 +12,21 @@
 <body>
   <!-- navbar section -->
   <nav class="navbar">
-    <div class="container">
-      <div class="navbar__main">
+    <div class="container d-flex">
+      <div class="navbar__main d-flex">
         <figure class="logo">
           <img src="./assets/img/logo.png" alt="Lookscout Logo">
         </figure>
-        <ul class="navbar__links">
+        <ul class="navbar__links d-flex">
           <li><a href="#Home">Home</a></li>
           <li><a href="#products">Our products</a></li>
-          <li><a href="#Resources">Resources <img src="./assets/img/down.png"></a></li>
+          <li><a href="#Resources">Resources <span style="display: inline-block; transform: rotate(90deg);">&gt;</span></a></li>
           <li><a href="#Contacts">Contacts</a></li>
         </ul>
       </div>
-      <ul class="navbar__btns">
-        <li><a href="#signup">Sign Up</a></li>
-        <li><a href="#login">Log In</a></li>
+      <ul class="navbar__btns d-flex">
+        <li><a href="#signup" class="signup">Sign Up</a></li>
+        <li><a href="#login" class="login">Log In</a></li>
       </ul>
     </div>
   </nav>
@@ -41,14 +41,14 @@
 
   <!-- welcome section -->
   <section class="welcome">
-    <div class="container">
+    <div class="container d-flex">
       <div class="welcome__content">
         <h2>Welcome to your new digital reality that will rock your world.</h2>
         <p>Let us help you take you from zero to serious business and beyond.
         Our no-strings attached free trial lets you test our product today.</p>
       </div>
 
-      <form action="">
+      <form>
         <input type="text" id="submitBtn" placeholder="Enter your email">
         <button type="submit">Submit</button>
         <label for="submitBtn">Subscribe to our newsletter</label>
@@ -58,54 +58,52 @@
 
   <!-- tools section -->
   <section class="tools">
-    <div class="container">
-      <div class="d-flex">
-        <!-- left section -->
-        <div class="tools__content">
-          <figure class="img-wrapper">
-            <img src="./assets/img/Tooltip.png" alt="">
-          </figure>
-          <h3>Reach your users with new tools. </h3>
-          <p>Efficiently unleash cross-media information without cross-media value. Quickly maximize.Efficiently unleash cross-media information without cross-media value. Quickly maximize.Efficiently unleash cross-media.</p>
-          <P class="date">25 Apr 2022 </P>
+    <div class="container d-flex">
+      <!-- left section -->
+      <div class="tools__content">
+        <figure class="img-wrapper">
+          <img src="./assets/img/Tooltip.png" alt="">
+        </figure>
+        <h3>Reach your users with new tools. </h3>
+        <p>Efficiently unleash cross-media information without cross-media value. Quickly maximize.Efficiently unleash cross-media information without cross-media value. Quickly maximize.Efficiently unleash cross-media.</p>
+        <P class="date">25 Apr 2022 </P>
+      </div>
+
+      <!-- right section -->
+      <div class="tools__items-wrapper">
+        <!-- first item -->
+        <div class="tools__item d-flex">
+          <div class="img-wrapper">
+            <img src="./assets/img/Containerone.png" alt="">
+          </div>
+          <div class="tools__item-content">
+            <h3>Reach your users with new tools</h3>
+            <p>Efficiently unleash cross-media information without cross-media value. Quickly maximize.</p>
+            <P class="date">25 Apr 2022 </P>
+          </div>
         </div>
 
-        <!-- right section -->
-        <div class="tools__items-wrapper">
-          <!-- first item -->
-          <div class="tools__item d-flex">
-            <div class="img-wrapper">
-              <img src="./assets/img/Containerone.png" alt="">
-            </div>
-            <div class="tools__item-content">
-              <h3>Reach your users with new tools</h3>
-              <p>Efficiently unleash cross-media information without cross-media value. Quickly maximize.</p>
-              <P class="date">25 Apr 2022 </P>
-            </div>
+        <!-- second item -->
+        <div class="tools__item d-flex">
+          <div class="img-wrapper">
+            <img src="./assets/img/Containertwo.png" alt="">
           </div>
-
-          <!-- second item -->
-          <div class="tools__item d-flex">
-            <div class="img-wrapper">
-              <img src="./assets/img/Containertwo.png" alt="">
-            </div>
-            <div class="tools__item-content">
-              <h3>Faster ways to reach your customer</h3>
-              <p>Completely synergize resource taxing relationships via premier niche markets.</p>
-              <P class="date">25 Apr 2022 - Blog theme</P>
-            </div>
+          <div class="tools__item-content">
+            <h3>Faster ways to reach your customer</h3>
+            <p>Completely synergize resource taxing relationships via premier niche markets.</p>
+            <P class="date">25 Apr 2022 - Blog theme</P>
           </div>
+        </div>
 
-          <!-- third item -->
-          <div class="tools__item d-flex">
-            <div class="img-wrapper">
-              <img src="./assets/img/Containerthree.png" alt="">
-            </div>
-            <div class="tools__item-content">
-              <h3>Revolutionizing the Design Industry</h3>
-              <p>Efficiently unleash cross-media information without cross-media value. Quickly maximize.</p>
-              <P class="date">25 Apr 2022 - Blog theme</P>
-            </div>
+        <!-- third item -->
+        <div class="tools__item d-flex">
+          <div class="img-wrapper">
+            <img src="./assets/img/Containerthree.png" alt="">
+          </div>
+          <div class="tools__item-content">
+            <h3>Revolutionizing the Design Industry</h3>
+            <p>Efficiently unleash cross-media information without cross-media value. Quickly maximize.</p>
+            <P class="date">25 Apr 2022 - Blog theme</P>
           </div>
         </div>
       </div>
@@ -117,7 +115,7 @@
     <div class="container">
       <h2>Latest Blog Posts</h2>
       <!-- upper section -->
-      <div class="posts__flex">
+      <div class="posts__flex d-flex">
         <!-- first card -->
         <div class="posts__card">
           <figure>
@@ -150,7 +148,7 @@
       </div>
       
       <!-- lower section -->
-      <div class="posts__flex">
+      <div class="posts__flex d-flex">
         <!-- forth card -->
         <div class="posts__card">
           <figure>
@@ -199,7 +197,7 @@
   <footer class="footer">
     <div class="container">
       <!-- upper section -->
-      <div class="footer__content">
+      <div class="footer__content d-flex">
         <!-- logo section -->
         <div class="footer__logo">
           <figure class="logo">
