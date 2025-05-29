@@ -25,6 +25,7 @@
 
 
   --lh-60: 60px;
+  --lh-44: 44px;
   --lh-42: 42px;
   --lh-40: 40px;
   --lh-30: 30px;
@@ -318,7 +319,7 @@ footer input {
 
 
 /* Responsive for tablet */
-@media(max-width:768px) {
+@media(max-width:768px){
   body {
     width: 768px;
   }
@@ -383,7 +384,7 @@ footer input {
 
   /* banner */
   .banner{
-    padding: 48px 48px 88px 48px;
+    padding: 48px 48px 88px;
   }
   .banner p{
     margin-bottom: 0;
@@ -459,9 +460,116 @@ footer input {
   .footer__choose{
     order: 3;
   }
-
 }
 
+/* Responsive for mobile */
+@media(max-width: 375px){
+  body{
+    width: 375px;
+  }
+  .container {
+    padding: 0 16px;
+  }
+  section, footer {
+    padding: 32px 0;
+  }
+  h1 {
+    font-weight: var(--fw-600);
+    font-size: 36px;
+    line-height: var(--lh-44);
+    letter-spacing: var(--ls-minus-two);
+  }
+  h2 {
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: var(--ls-minus-two);
+  }
+  h3 {
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: var(--ls-minus-two);
+    margin-bottom: 0;
+  }
+  /* banner */
+  .banner{
+    padding: 32px 16px 40px;
+  }
+  .banner .container{
+    width: 343px;
+  }
+  /* tools */
+  .tools img{
+    width: 343px;
+    height: 185px;
+  }
+  .tools h3 {
+    white-space: nowrap;
+    overflow: hidden;
+    margin-top: 24px !important;
+    margin-bottom: 4px !important;
+  }
+  .tools__item{
+    flex-direction: column;
+    gap: 0;
+  }
+  /* welvome */
+  .welcome input, .welcome button {
+    width: 343px;
+    border-radius: 6px;
+  }
+  .welcome button {
+    margin-left: 0;
+    margin-top: 16px;
+  }
+  form p{
+    display: none;
+  }
+  /* posts */
+  .posts img {
+    width: 343px;
+    margin-bottom: 16px;
+  }
+  .posts__flex {
+    flex-direction: column;
+    gap:32px;
+  }
+  .posts__card{
+    width: 100%;
+  }
+  .posts h3 {
+    margin-top: 8px;
+    /* margin-bottom: 16px; */
+  }
+  .upper-flex{
+    margin-bottom: 0;
+  }
+  .third-card{
+    display: inline-block;
+  }
+  /* signup */
+  .signup__link a{
+    width: 100%;
+  }
+  .signup-sec .login {
+    margin-left: 0;
+    margin-top: 16px;
+  }
+  /* footer */
+  .footer__logo input {
+    width: 255px;
+  }
+  .footer__resources{
+    order: 0;
+  }
+  .footer__company{
+    order: 4;
+  }
+  .footer__copyright{
+    margin-top: 24px;
+    padding-top: 24px;
+  }
+
+}
 
 
 
