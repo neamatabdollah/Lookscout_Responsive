@@ -161,7 +161,7 @@ p {
   line-height: var(--lh-20);
   margin-bottom: 16px;
 }
-.banner .container {
+.banner h1 {
   width: 640px;
   margin: auto;
 }
